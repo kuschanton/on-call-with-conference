@@ -55,8 +55,8 @@ export const handler: ServerlessFunctionSignature<{}, Request> = async function 
           timeout: 15,
           machineDetection: 'Enable',
           // url: `http://${context.DOMAIN_NAME}/call-answered?conferenceName=${request.conferenceName}`
-          url: `http://3623-2a02-8109-a0c0-33bf-5da1-c897-1097-6b55.eu.ngrok.io/call-answered?onCallCaller=${request.caller.replace('+', '')}&escalationCount=${request.escalationsCount}`,
-          statusCallback: `http://3623-2a02-8109-a0c0-33bf-5da1-c897-1097-6b55.eu.ngrok.io/call-status?onCallCaller=${request.caller.replace('+', '')}&escalationCount=${request.escalationsCount}`,
+          url: `http://xxxx.eu.ngrok.io/call-answered?onCallCaller=${request.caller.replace('+', '')}&escalationCount=${request.escalationsCount}`,
+          statusCallback: `http://xxxx.eu.ngrok.io/call-status?onCallCaller=${request.caller.replace('+', '')}&escalationCount=${request.escalationsCount}`,
         })
 
       console.log(`call-engineer.ts >>> Call started: ${call.sid}`)
