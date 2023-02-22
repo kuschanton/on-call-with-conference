@@ -1,0 +1,1 @@
+export const getConferenceName = (caller: string) => 'on-call-' + caller.replace('+', '')
